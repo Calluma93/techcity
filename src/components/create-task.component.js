@@ -112,7 +112,7 @@ export default class CreateTask extends Component {
               />
         </div>
         <div className="form-group">
-          <label>Duration (in minutes): </label>
+          <label>Estimated Time (in minutes): </label>
           <input 
               type="text" 
               className="form-control"
@@ -121,7 +121,7 @@ export default class CreateTask extends Component {
               />
         </div>
         <div className="form-group">
-          <label>Date: </label>
+          <label>Date Added: </label>
           <div>
             <DatePicker
               selected={this.state.date}

@@ -6,7 +6,7 @@ const Task = props => (
   <tr>
     <td>{props.task.username}</td>
     <td>{props.task.description}</td>
-    <td>{props.task.duration}</td>
+    <td>{props.task.duration} mins</td>
     <td>{props.task.date.substring(0,10)}</td>
     <td>
       <Link to={"/edit/"+props.task._id}>edit</Link> | <a href="#" onClick={() => { props.deleteTask(props.task._id) }}>delete</a>
@@ -57,8 +57,8 @@ export default class TaskList extends Component {
             <tr>
               <th>Name</th>
               <th>Description</th>
-              <th>Duration</th>
-              <th>Date</th>
+              <th>Estimated Time</th>
+              <th>Date Added</th>
               <th>Actions</th>
             </tr>
           </thead>
